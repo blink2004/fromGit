@@ -19,8 +19,13 @@ public class TestSample {
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
         String webdriversPath = "./";
 
+        // for Windows
+        /*System.setProperty("webdriver.chrome.bin",
+                webdriversPath + "chromedriver.exe");*/
+
+        // for Linux
         System.setProperty("webdriver.chrome.bin",
-                webdriversPath + "chromedriver.exe");
+                webdriversPath + "chromedriver");
 
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
