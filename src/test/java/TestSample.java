@@ -3,6 +3,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +19,8 @@ public class TestSample {
     @BeforeSuite
     public void before() {
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
-        String webdriversPath = "./";
+//        String webdriversPath = "./";
+        String webdriversPath = "";
 
         // for Windows
         /*System.setProperty("webdriver.chrome.bin",
@@ -26,16 +28,16 @@ public class TestSample {
 
         // for Linux
         System.setProperty("webdriver.chrome.bin",
-                webdriversPath + "chromedriver");
+                webdriversPath + "linux.chromedriver");
 
-//        driver = new ChromeDriver();
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
+//        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(domain);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void testGit() {
         System.out.println("Simple test from git");
     }
