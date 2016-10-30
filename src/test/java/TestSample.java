@@ -23,12 +23,12 @@ public class TestSample {
         String webdriversPath = "";
 
         // for Windows
-        /*System.setProperty("webdriver.chrome.bin",
-                webdriversPath + "chromedriver.exe");*/
+        System.setProperty("webdriver.chrome.bin",
+                webdriversPath + "chromedriver.exe");
 
         // for Linux
-        System.setProperty("webdriver.chrome.bin",
-                webdriversPath + "linux.chromedriver");
+        /*System.setProperty("webdriver.chrome.bin",
+                webdriversPath + "linux.chromedriver");*/
 
         driver = new ChromeDriver();
 //        driver = new FirefoxDriver();
