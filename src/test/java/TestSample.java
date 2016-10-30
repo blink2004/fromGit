@@ -20,10 +20,10 @@ public class TestSample {
     public void before() {
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
 //        String webdriversPath = "./";
-        String webdriversPath = "";
+        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
 
         // for Windows
-        System.setProperty("webdriver.chrome.bin",
+        System.setProperty("webdriver.chrome.driver",
                 webdriversPath + "chromedriver.exe");
 
         // for Linux

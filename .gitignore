@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+# folders
+/target/
+/surefire/
+/HTML_Report/
+/.idea/
+
+# files
+/from-git.iml
