@@ -8,23 +8,28 @@
     <artifactId>from-git</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <seleniumVersion>2.53.1</seleniumVersion>
+        <testngVersion>6.9.13.6</testngVersion>
+    </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>2.53.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>2.53.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.13.6</version>
+            <version>${testngVersion}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -48,13 +53,13 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.13.6</version>
+            <version>${testngVersion}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.13.6</version>
+            <version>${testngVersion}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
