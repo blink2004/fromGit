@@ -19,7 +19,7 @@ public class TestSample {
     @BeforeSuite
     public void before() {
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
-        String webdriversPath = "./";
+//        String webdriversPath = "./";
 //        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
 
         // for Windows
@@ -28,11 +28,11 @@ public class TestSample {
 
         // for Linux
 //        System.setProperty("webdriver.chrome.bin",
-        System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
-        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver");
+        /*System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver");*/
 
-        driver = new ChromeDriver();
-//        driver = new FirefoxDriver();
+//        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(domain);
