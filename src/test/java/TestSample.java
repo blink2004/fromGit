@@ -19,8 +19,8 @@ public class TestSample {
     @BeforeSuite
     public void before() {
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
-//        String webdriversPath = "./";
-        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
+        String webdriversPath = "./";
+//        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
 
         // for Windows
         /*System.setProperty("webdriver.chrome.driver",
@@ -28,7 +28,7 @@ public class TestSample {
 
         // for Linux
         System.setProperty("webdriver.chrome.bin",
-                webdriversPath + "./linux.chromedriver");
+                webdriversPath + "linux.chromedriver");
 
         driver = new ChromeDriver();
 //        driver = new FirefoxDriver();
