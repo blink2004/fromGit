@@ -27,7 +27,8 @@ public class TestSample {
                 webdriversPath + "chromedriver.exe");*/
 
         // for Linux
-        System.setProperty("webdriver.chrome.bin",
+//        System.setProperty("webdriver.chrome.bin",
+        System.setProperty("webdriver.chrome.driver",
                 webdriversPath + "linux.chromedriver");
 
         driver = new ChromeDriver();
