@@ -28,8 +28,7 @@ public class TestSample {
 
         // for Linux
 //        System.setProperty("webdriver.chrome.bin",
-        System.setProperty("webdriver.chrome.driver",
-                webdriversPath + "linux.chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./../linux.chromedriver");
 
         driver = new ChromeDriver();
 //        driver = new FirefoxDriver();
