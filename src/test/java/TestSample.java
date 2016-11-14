@@ -18,19 +18,20 @@ public class TestSample {
 
     @BeforeSuite
     public void before() {
-        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
+//        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
 //        String webdriversPath = "./";
 //        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
 
         // for Windows
         /*System.setProperty("webdriver.chrome.driver",
                 webdriversPath + "chromedriver.exe");*/
-        System.setProperty("webdriver.gecko.driver", webdriversPath + "geckodriver.exe");
+//        System.setProperty("webdriver.gecko.driver", webdriversPath + "geckodriver.exe");
 
         // for Linux
 //        System.setProperty("webdriver.chrome.bin",
         /*System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
         System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver");*/
+        System.setProperty("webdriver.gecko.driver", "./../geckodriver.exe");
 
 //        driver = new ChromeDriver();
         driver = new FirefoxDriver();
