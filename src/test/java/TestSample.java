@@ -29,12 +29,12 @@ public class TestSample {
 
         // for Linux
 //        System.setProperty("webdriver.chrome.bin",
-        /*System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
-        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver");*/
-        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
+//        System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver_2_19");
+//        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
 
-//        driver = new ChromeDriver();
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
+//        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(domain);
