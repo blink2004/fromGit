@@ -35,7 +35,7 @@ public class TestSample {
 
         driver = new ChromeDriver();
 //        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(domain);
     }
