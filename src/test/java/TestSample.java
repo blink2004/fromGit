@@ -25,16 +25,17 @@ public class TestSample {
         // for Windows
         /*System.setProperty("webdriver.chrome.driver",
                 webdriversPath + "chromedriver.exe");*/
+//        System.setProperty("webdriver.firefox.bin", "D:/Program Files (x86)/Mozilla Firefox/firefox.exe");
 //        System.setProperty("webdriver.gecko.driver", webdriversPath + "geckodriver.exe");
 
         // for Linux
 //        System.setProperty("webdriver.chrome.bin",
 //        System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
-        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver_2_23");
-//        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
+//        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver_2_23");
+        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
 
-        driver = new ChromeDriver();
-//        driver = new FirefoxDriver();
+//        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(domain);
