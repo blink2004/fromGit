@@ -43,7 +43,7 @@ public class TestSample {
 //        System.setProperty("webdriver.chrome.bin",
 //        System.setProperty("webdriver.chrome.bin", "./../linux_chromedriver");
 //        System.setProperty("webdriver.chrome.driver", "./../linux_chromedriver_2_23");
-//        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
+        System.setProperty("webdriver.gecko.driver", "./../geckodriver");
 
 //        driver = new ChromeDriver();
         driver = new FirefoxDriver();
