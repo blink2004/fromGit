@@ -63,7 +63,6 @@ public class TestSample {
     public void after() {
         if ( driver!=null ){
             driver.quit();
-            driver.close();
         }
     }
 
