@@ -18,6 +18,11 @@ public class TestSample {
 
     @BeforeSuite
     public void before() {
+        String baseUrl = System.getenv("baseUrl");
+        String browser = System.getenv("browser");
+        System.out.println("ENV var \"baseUrl\": " + baseUrl);
+        System.out.println("ENV var \"browser\": " + browser);
+
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
 //        String webdriversPath = "./";
 //        String webdriversPath = "D:\\Work\\Test-Cases\\fromGit\\";
