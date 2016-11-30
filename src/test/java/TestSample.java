@@ -18,8 +18,11 @@ public class TestSample {
 
     @BeforeSuite
     public void before() {
-        String baseUrl = System.getenv("baseUrl").isEmpty() ? System.getenv("baseUrl") : domain;
-        String browser = System.getenv("browser").isEmpty() ? System.getenv("browser") : "no selected browser";
+        String baseUrl = System.getenv("baseUrl");
+        String browser = System.getenv("browser");
+
+        baseUrl = baseUrl!=null ? baseUrl : domain;
+        browser = browser!=null ? browser : "no browser selected";
         System.out.println("ENV var \"baseUrl\": " + baseUrl);
         System.out.println("ENV var \"browser\": " + browser);
 
