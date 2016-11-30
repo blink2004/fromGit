@@ -18,8 +18,8 @@ public class TestSample {
 
     @BeforeSuite
     public void before() {
-        String baseUrl = System.getenv("baseUrl");
-        String browser = System.getenv("browser");
+        String baseUrl = System.getenv("baseUrl").isEmpty() ? System.getenv("baseUrl") : domain;
+        String browser = System.getenv("browser").isEmpty() ? System.getenv("browser") : "no selected browser";
         System.out.println("ENV var \"baseUrl\": " + baseUrl);
         System.out.println("ENV var \"browser\": " + browser);
 
@@ -43,17 +43,25 @@ public class TestSample {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(domain);
+        driver.get(baseUrl);
     }
 
-    @Test
+    @Test(enabled = false)
     public void testGit() {
         System.out.println("Simple test from git");
     }
 
+    @Test
+    public void getCurUrl(){
+        System.out.println("Current URL is " + driver.getCurrentUrl());
+    }
+
     @AfterSuite
     public void after() {
-        driver.quit();
+        if ( driver!=null ){
+            driver.quit();
+            driver.close();
+        }
     }
 
 }
