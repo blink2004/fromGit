@@ -20,11 +20,14 @@ public class TestSample {
     public void before() {
         String baseUrl = System.getenv("baseUrl");
         String browser = System.getenv("browser");
+        String passwd  = System.getenv("passwd");
 
         baseUrl = baseUrl!=null ? baseUrl : domain;
         browser = browser!=null ? browser : "no browser selected";
+        passwd = passwd!=null ? passwd : "";
         System.out.println("ENV var \"baseUrl\": " + baseUrl);
         System.out.println("ENV var \"browser\": " + browser);
+        System.out.println("ENV var \"passwd\": " + passwd);
 
 //        String webdriversPath = "D:\\Program Files (x86)\\webdrivers\\";
 //        String webdriversPath = "./";
